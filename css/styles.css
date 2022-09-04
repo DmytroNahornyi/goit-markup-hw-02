@@ -1,0 +1,192 @@
+/* Цвет основного текста color: #212121; */
+/* Цвет лого color: #2196F3; */
+/* Цвет Studio color: #000000; */
+/* Цвет футера + описание белым color: #FFFFFF; */
+/* Кнопка героя background: #2196F3; */
+/* Описание блоков color: #757575; */
+
+:root {
+    --text-color: #212121;
+    --content-color: #757575;
+    --link-hover-color: #2196F3;
+    
+}
+/* шрифт по всему тексту */
+body {
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+}
+
+/* Убрал точки списка */
+.list {
+    list-style: none;
+}
+/* Скрыл заголовок */
+.hide {
+    font-size: 0;
+}
+/* Текст лого черный, выделение и фокус */
+.header-logo {
+    color: #000000; 
+    font-family: Raleway, sans-serif;
+    text-decoration: none;   
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+/* identical to box height */
+    letter-spacing: 0.03em;
+}
+.header-logo:hover,
+.header-logo:focus {
+    color: var(--link-hover-color) }
+
+/* Герой, цвет шрифта */
+.hero-title {
+    color: #FFFFFF;
+    /* Фон поставил, чтобы было видно белый цвет шрифта. В дальнейшем уберу */
+    background-color: aquamarine;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* Цвет и фон кнопки */
+.hero-button {
+    color: #FFFFFF;
+    background: var(--link-hover-color); 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+/* Текст нафигации черный, выделение и фокус */
+.site-nav .link {
+    color: var(--text-color); 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none; 
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--link-hover-color); }
+
+/* Текст контактов черный, выделение и фокус */
+.cont-nav .contact {
+    color: var(--content-color); 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none; 
+}
+
+.cont-nav .contact:hover,
+.cont-nav .contact:focus {
+    color: var(--link-hover-color); }
+
+/* цвет заголовков */
+.section-title > h3 {
+    color: var(--text-color); 
+
+}
+
+/* шрифт заголовка на первой странице */
+.header-font {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.header-class {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+}
+/* цвет текста */
+.text > p {
+    color: var(--content-color); }
+/* размер шрифта в 1 странице Section 2 */
+.header-text {
+    font-size: 14px;
+    line-height: 1.71;
+/* or 171% */
+    letter-spacing: 0.03em;
+}
+/* размер шрифтов на второй странице во второй секции */
+.header-section > h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+}
+/* размер шрифтов на второй странице (подпись) */
+.header-sig > p {
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.03em; 
+}
+/* Подвал */
+.footer-adress {
+    color: rgba(255, 255, 255, 0.6); 
+/* Фон поставил, чтобы было видно белый цвет шрифта. В дальнейшем уберу */
+    background-color: aquamarine;
+    font-size: 14px;
+    line-height: 1.71;
+/* or 171% */
+    letter-spacing: 0.03em;
+    text-decoration: none; 
+    font-style: normal;
+}
+
+.footer-adress:hover,
+.footer-adress:focus {
+    color: var(--link-hover-color); }
+
+/* Portfolio (2 страница) */
+.button {
+    color: var(--text-color);
+    background: #F5F4FA; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color: #FFFFFF;
+    background: var(--link-hover-color);
+}
