@@ -9,13 +9,19 @@
     --text-color: #212121;
     --content-color: #757575;
     --link-hover-color: #2196F3;
-    
+    --сolor-logo: #000000;
+    --color-hero-adr: #ffffff;
+    --color-button: #F5F4FA;
+    --logo: #2196f3;
+    --white-logo: #ffffff;
+            
 }
 /* шрифт по всему тексту */
 body {
     color: var(--text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
+    font-size: 14px;
 }
 
 /* Убрал точки списка */
@@ -26,9 +32,14 @@ body {
 .hide {
     font-size: 0;
 }
+
+/* Стиль логотипа */
+.logo {
+    color: var(--logo);
+}
 /* Текст лого черный, выделение и фокус */
 .header-logo {
-    color: #000000; 
+    color: var(--color-logo);
     font-family: Raleway, sans-serif;
     text-decoration: none;   
     font-weight: 700;
@@ -37,13 +48,13 @@ body {
 /* identical to box height */
     letter-spacing: 0.03em;
 }
-.header-logo:hover,
-.header-logo:focus {
-    color: var(--link-hover-color) }
+.white-color {
+    color: var(--white-logo);
+}
 
 /* Герой, цвет шрифта */
 .hero-title {
-    color: #FFFFFF;
+    color: var(--color-hero-adr);
     /* Фон поставил, чтобы было видно белый цвет шрифта. В дальнейшем уберу */
     background-color: aquamarine;
     font-weight: 900;
@@ -57,7 +68,7 @@ body {
 }
 /* Цвет и фон кнопки */
 .hero-button {
-    color: #FFFFFF;
+    color: var(--color-hero-adr);
     background: var(--link-hover-color); 
     font-weight: 700;
     font-size: 16px;
@@ -75,7 +86,6 @@ body {
 .site-nav .link {
     color: var(--text-color); 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     text-decoration: none; 
 }
@@ -88,7 +98,6 @@ body {
 .cont-nav .contact {
     color: var(--content-color); 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none; 
@@ -99,15 +108,14 @@ body {
     color: var(--link-hover-color); }
 
 /* цвет заголовков */
-.section-title > h3 {
-    color: var(--text-color); 
+.section-title p {
+    color: var(--content-color); 
 
 }
 
 /* шрифт заголовка на первой странице */
 .header-font {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -129,11 +137,11 @@ body {
     letter-spacing: 0.03em;
 }
 /* цвет текста */
-.text > p {
+.text > p, .text-img p {
     color: var(--content-color); }
 /* размер шрифта в 1 странице Section 2 */
-.header-text {
-    font-size: 14px;
+
+.header-text p{
     line-height: 1.71;
 /* or 171% */
     letter-spacing: 0.03em;
@@ -155,11 +163,11 @@ body {
     letter-spacing: 0.03em; 
 }
 /* Подвал */
+footer {
+    background-color: #2F303A;
+}
 .footer-adress {
-    color: rgba(255, 255, 255, 0.6); 
-/* Фон поставил, чтобы было видно белый цвет шрифта. В дальнейшем уберу */
-    background-color: aquamarine;
-    font-size: 14px;
+    color: var(--white-logo);
     line-height: 1.71;
 /* or 171% */
     letter-spacing: 0.03em;
@@ -173,8 +181,9 @@ body {
 
 /* Portfolio (2 страница) */
 .button {
+    font-family: Roboto;
     color: var(--text-color);
-    background: #F5F4FA; 
+    background: var(--color-button); 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -187,6 +196,9 @@ body {
 
 .button:hover,
 .button:focus {
-    color: #FFFFFF;
+    color: var(--color-hero-adr);
     background: var(--link-hover-color);
+}
+.site-nav .current {
+    color: var(--link-hover-color);
 }
