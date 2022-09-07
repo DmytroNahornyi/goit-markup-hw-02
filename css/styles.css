@@ -109,8 +109,14 @@ body {
 
 /* цвет заголовков */
 .section-title p {
-    color: var(--content-color); 
+    color: var(--content-color);
 
+}
+
+.title-page p {
+    line-height: 2;
+/* or 171% */
+    letter-spacing: 0.03em;
 }
 
 /* шрифт заголовка на первой странице */
@@ -119,6 +125,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .header-title {
@@ -147,7 +154,7 @@ body {
     letter-spacing: 0.03em;
 }
 /* размер шрифтов на второй странице во второй секции */
-.header-section > h3 {
+.header-section h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -155,7 +162,7 @@ body {
     letter-spacing: 0.06em;
 }
 /* размер шрифтов на второй странице (подпись) */
-.header-sig > p {
+.header-sig p {
     font-size: 16px;
     line-height: 1.88;
     /* identical to box height, or 188% */
